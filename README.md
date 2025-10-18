@@ -1,9 +1,12 @@
-# .github-workflows-snake.yml             name: Generate Snake
+name: Generate Snake
 
 on:
   schedule:
     - cron: "0 */12 * * *"
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   build:
